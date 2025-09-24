@@ -1,15 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
 
 .swiper {
     max-width: 800px;
@@ -27,11 +16,11 @@ body {
     width: 100%;
     max-width: 660px;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .swiper {
-    --swiper-theme-color: rgb(0, 0, 0);
+    --swiper-theme-color: #000000;
     --swiper-pagination-bullet-size: 10px;
     --swiper-pagination-bullet-inactive-color: #5d5d5d;
     --swiper-pagination-bullet-inactive-opacity: 0.4;
