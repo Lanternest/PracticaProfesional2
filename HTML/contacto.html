@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,47 @@
     <link rel="icon" href="">
 </head>
 <body>
-    
+    <nav><!-- Navegación (links a las diferentes páginas) -->
+        <a title="Muñon-Zitto" href="/HTML/index.html"><img src="" alt="Logo de Muñon-Zitto" width="90"><h1 href="/HTML/index.html">Muñon-Zitto</h1></a>
+        <a href="/HTML/tortas.html"><button class="tortas" alt="Tortas">Tortas</button></a>
+        <a href="/HTML/facturas.html"><button class="facturas" alt="Facturas">Facturas</button></a>
+        <a href="/HTML/canela.html"><button class="canela" alt="canela">Canela</button></a>
+        <a href="/HTML/contacto.html"><button class="contact">Contactanos</button></a>
+    </nav>
+    <main>
+        <div class="contact_form">
+            <div class="formulario">
+                <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+                <form action="" method="post">
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="nombre" required placeholder="Escribe tu nombre">
+                    
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="email" required placeholder="Escribe tu Email">
+                    
+                    <label for="image" class="colocar_imagen">Compartinos tu V8</label>
+                    <input type="file" id="imagen">
+                    
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea class="texto_mensaje" name="mensaje" required
+                    placeholder="Deja aquí tu comentario..." sentences rows="5"></textarea>
+                    
+                    <div class="enviar">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
